@@ -16,6 +16,7 @@ Wrapper for Firebase authorization.
 - min iOS 9 
 - **Cocoa pods** 
 -  Firebase pods :
+
 pod 'Firebase/Auth'
 
 pod 'FirebaseUI/Phone'
