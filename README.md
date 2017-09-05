@@ -17,9 +17,13 @@ Wrapper for Firebase authorization.
 - **Cocoa pods** 
 -  Firebase pods :
 pod 'Firebase/Auth'
+
 pod 'FirebaseUI/Phone'
+
 pod 'FirebaseUI/Google'
+
 pod 'FirebaseUI/Facebook'
+
 pod 'FirebaseUI/Auth'
 
 > Facebook app is required before authorization.
