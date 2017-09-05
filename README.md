@@ -17,13 +17,15 @@ Wrapper for Firebase authorization.
 - **Cocoa pods** 
 -  Firebase pods :
 pod 'Firebase/Auth'
-pod 'FirebaseUI/Phone', '~> 4.0'
-pod 'FirebaseUI/Google', '~> 4.0'
-pod 'FirebaseUI/Facebook', '~> 4.0'
-pod 'FirebaseUI/Auth', '~> 4.0'
+pod 'FirebaseUI/Phone'
+pod 'FirebaseUI/Google'
+pod 'FirebaseUI/Facebook'
+pod 'FirebaseUI/Auth'
 
 > Facebook app is required before authorization.
+
 > Google required creting configuration file and importing in app.
+
 > conact Facebook and Google sign in documentation
 
 ## Installation
@@ -34,14 +36,19 @@ Download files and drag in into project. Install required pods files.
 **Facebook/Google**
 
 GoogleClient.authorize(from: self, isFirebaseAuth: true) { (success) in }
+
 FacebookClient.authorize(from: self, isFirebaseAuth: true) { (success) in }
+
 
 **Email Authorization**
 
 FirebaseAuthClient.auth(email: emailTextField.text!, password: passwordTextField.text!, success: { (success) in }
 
+
 **Phone Authorization and verification**
 
 FirebaseAuthClient.phoneAuth(phoneNumber: phoneNumber, success: { (success) in }
+
 FirebaseAuthClient.verifyPhone(verifyCode: conformationCodeTextField.text!, success: { (success) in }
+
 
